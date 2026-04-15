@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sand: #FDFBF7;
+  --color-sage: #9EAC90;
+  --color-sage-light: #B4C0A7;
+  --color-terracotta: #D98A6C;
+  --color-forest: #2D3C33;
+
+  --font-playfair: "Playfair Display", serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+/* ── Prevent any horizontal overflow / mobile shift ── */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Prevent any child element from busting out of the viewport */
+* {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: var(--color-sand);
+  color: var(--color-forest);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* iOS rubber-band / momentum scroll fix */
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent fixed/absolute positioned elements from causing overflow */
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+}
