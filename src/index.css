@@ -11,48 +11,79 @@
   --font-inter: "Inter", sans-serif;
 }
 
-/* ── Prevent any horizontal overflow / mobile shift ── */
-html,
-body {
+/* ── Prevent horizontal overflow / mobile shift ── */
+html, body {
   overflow-x: hidden;
   max-width: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
 }
-
 #root {
   overflow-x: hidden;
   width: 100%;
   max-width: 100%;
 }
-
-/* Prevent any child element from busting out of the viewport */
 * {
   box-sizing: border-box;
   min-width: 0;
 }
 
 body {
-  font-family: var(--font-inter);
-  background-color: var(--color-sand);
-  color: var(--color-forest);
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  background-color: #FDFBF7;
+  color: #2D3C33;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* iOS rubber-band / momentum scroll fix */
   -webkit-overflow-scrolling: touch;
   position: relative;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-playfair);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* Prevent fixed/absolute positioned elements from causing overflow */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+}
+
+/* ── Global typography scale boosts ── */
+p {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
+/* Tailwind text-sm override → 15px */
+.text-sm {
+  font-size: 0.9375rem !important;
+  line-height: 1.7 !important;
+}
+
+/* Tailwind text-base override → 17px */
+.text-base {
+  font-size: 1.0625rem !important;
+}
+
+/* Section body paragraphs */
+.text-lg {
+  font-size: 1.175rem !important;
+  line-height: 1.8 !important;
+}
+
+/* Section headings */
+.text-3xl {
+  font-size: 2rem !important;
+}
+.text-4xl {
+  font-size: 2.5rem !important;
+}
+.text-5xl {
+  font-size: 3.25rem !important;
+}
+
 img, svg, video {
   max-width: 100%;
   height: auto;

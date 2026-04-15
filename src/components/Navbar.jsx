@@ -52,11 +52,13 @@ export default function Navbar() {
               <Link
                 key={link.path}
                 to={link.path}
-                className="text-sm tracking-wide transition-colors duration-200 relative group"
+                className="tracking-wide transition-colors duration-200 relative group"
                 style={{
                   color: location.pathname === link.path ? '#D98A6C' : '#2D3C33',
                   fontFamily: '"Inter", sans-serif',
-                  fontWeight: 500,
+                  fontWeight: 600,
+                  fontSize: '1rem',
+                  letterSpacing: '0.02em',
                 }}
               >
                 {link.name}
@@ -76,8 +78,8 @@ export default function Navbar() {
             href="https://wa.link/1td6k4"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg"
-            style={{
+            className="hidden md:flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            style={{ fontSize: '0.95rem',
               background: 'linear-gradient(135deg, #9EAC90, #7E9C82)',
               color: '#fff',
               fontFamily: '"Inter", sans-serif',

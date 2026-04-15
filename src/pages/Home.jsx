@@ -299,14 +299,20 @@ export default function Home() {
               Holistic Wellness · Kharghar, Navi Mumbai
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
-              style={{ fontFamily: '"Playfair Display", serif', color: '#1E2B25' }}>
+            <h1 className="font-black leading-none mb-8"
+              style={{
+                fontFamily: '"Playfair Display", serif',
+                color: '#1E2B25',
+                fontSize: 'clamp(3rem, 8vw, 6.5rem)',
+                lineHeight: 1.05,
+                letterSpacing: '-0.02em',
+              }}>
               Restore Balance.<br />
               <span style={{ color: '#D98A6C' }}>Heal from Within.</span>
             </h1>
 
-            <p className="text-base md:text-lg leading-relaxed mb-10 max-w-lg"
-              style={{ color: '#4A6055', fontFamily: '"Inter", sans-serif' }}>
+            <p className="leading-relaxed mb-10 max-w-lg"
+              style={{ color: '#4A6055', fontFamily: '"Inter", sans-serif', fontSize: '1.2rem', lineHeight: 1.8 }}>
               Experience India's most personalized yoga therapy, chakra healing, and meditation — guided by Trijita Goswami at YogAmbika, Kharghar. Trusted by 100+ clients for root-level transformation.
             </p>
 
